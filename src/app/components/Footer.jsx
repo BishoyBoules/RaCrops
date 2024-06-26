@@ -29,15 +29,15 @@ const Footer = () => {
          onSubmit: values => console.log(values)
     })
 
-    const footerElement = <footer id='contact' className='px-24 py-10 m-0 bg-[#191919] rounded-t-lg flex flex-row justify-between items-center w-full'>
-        <section className='w-1/3 bg-white p-5 rounded-3xl'>
-            <h1 className='font-bold text-3xl mb-2 text-[#d0372a]'>Contact us</h1>
-            <p className='text-md font-semibold text-black'>
+    const footerElement = <footer id='contact' className='lg:px-24 px-10 py-10 m-0 bg-[#191919] rounded-t-lg flex lg:flex-row flex-col justify-between items-center w-full'>
+        <section className='lg:w-1/3 w-full bg-white md:p-5 p-2 rounded-3xl lg:m-0 mb-2'>
+            <h1 className='font-bold md:text-start text-center text-3xl mb-2 text-[#d0372a]'>Contact us</h1>
+            <p className='text-md font-semibold w-full text-black lg:text-start text-center'>
             We invite you to explore our website to learn more about RaCrops and our offerings. If you have any inquiries or would like to partner with us, please do not hesitate to contact us. Together, we can create a healthier and more sustainable future.
             I hope this presentation meets your requirements for the website! If you need any further customization or additional sections, please let me know.
             </p>
         </section>
-        <section className='text-white'>
+        <section className='text-white my-4'>
             <h3 className='font-extrabold'>Phone:</h3>
             <p>+201028889005</p>
             <p>+31627882121</p>

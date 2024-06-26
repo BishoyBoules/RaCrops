@@ -36,7 +36,7 @@ const About = () => {
   ]
   return (
     <div>
-      <h1 className='text-center px-24 w-full font-extrabold md:text-6xl sm:text-3xl mb-16 mt-36 text-[#d0372a]'>About us</h1>
+      <h1 className='text-center px-24 w-full font-extrabold md:text-6xl text-3xl mb-16 mt-36 text-[#d0372a]'>About us</h1>
       {sections.map(({header, paragraph}) =>  <AboutSection key={header} header={'--' + header + '--'} paragraph={paragraph}/>)}
     </div>
   )
