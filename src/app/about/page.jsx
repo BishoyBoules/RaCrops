@@ -1,7 +1,5 @@
 import React from 'react'
 import AboutSection from './AboutSection'
-import Navbar from '..//components/Navbar'
-import Footer from '../components/Footer'
 
 const About = () => {
   const sections = 
@@ -38,10 +36,8 @@ const About = () => {
   ]
   return (
     <div>
-      <Navbar/>
       <h1 className='text-center px-24 w-full font-extrabold md:text-6xl sm:text-3xl mb-16 mt-36 text-[#d0372a]'>About us</h1>
       {sections.map(({header, paragraph}) =>  <AboutSection key={header} header={'--' + header + '--'} paragraph={paragraph}/>)}
-      <Footer/>
     </div>
   )
 }

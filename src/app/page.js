@@ -1,12 +1,9 @@
 import Image from 'next/image'
 import tomato from '../../public/read-more-tomato.png'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center mt-36">
-      <Navbar/>
       <h1 className="text-start w-full font-extrabold px-24 text-6xl mb-16 text-[#d0372a]">RaCrops</h1>
       <section className='flex flex-row justify-between px-24 items-center mb-5'>
         <section className='flex flex-col w-1/2'>
@@ -19,7 +16,6 @@ export default function Home() {
           <Image width={500} src={tomato} alt='tomato'/>
         </section>
       </section>
-      <Footer/>
     </div>
   )
 }
