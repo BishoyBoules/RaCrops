@@ -22,7 +22,7 @@ const Navbar = () => {
             <section>
                 <Image className='md:w-16 lg:w-20 w-10' src={logo} alt='logo'/>
             </section>
-            {showMenu && <section className='md:w-2/3 flex md:flex-row flex-col items-center md:justify-between justify-evenly md:static md:bg-transparent bg-white fixed right-0 top-0 h-full'>
+            <section className={'md:w-2/3 md:flex md:flex-row flex-col items-center md:justify-between justify-evenly md:static md:bg-transparent bg-white fixed right-0 top-0 h-full ' + (showMenu ? "flex" : "hidden")}>
                 <section className='flex md:flex-row flex-col items-center justify-between w-1/2'>
                     <Link onClick={() => setPage(0)} className={'font-bold lg:text-2xl md:mr-10 md:ml-10 text-md ' + (page == 0 ? "text-[#fbc731]" : "text-[#d0372a]")} href="./">Home</Link>
                     <Link onClick={() => setPage(1)} className={'font-bold lg:text-2xl md:mr-10 text-lg ' + (page == 1 ? "text-[#fbc731]" : "text-[#d0372a]")} href="./about">About</Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <Image src={dutch} width={35} alt='dutch' className='cursor-pointer' onMouseEnter={() => setDutPopup(true)} onMouseLeave={() => setDutPopup(false)} onClick={() => changeLang("dut")}/>
                     {dutPopup && <span className='bg-white rounded-md text-xs font-bold p-1 absolute ml-16 mb-10 text-black'>Dutch</span>}
                 </section>
-            </section>}
+            </section>
             <section className='md:hidden'>
                 <FontAwesomeIcon
                     icon={faBars}
